@@ -18,4 +18,7 @@ class people::fivetanley::brew_cask_apps {
       "--binarydir=${boxen::config::bindir}"
     ]
   }
+  package { '1password': }
+  package { 'dropbox': }
 }
+

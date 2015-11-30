@@ -1,8 +1,11 @@
+### Ruby Settings
 ruby::provider: chruby
 ruby::chruby::auto_switch: true
-
 ruby::rbenv::ensure: "absent"
 
-# App Store Credentials
+### App Store Credentials
 appstore::appleid: "dstanley.stuart@gmail.com"
 appstore::password: "nope this is not my password"
+
+### Node.js Settings
+nodejs::build::ensure: "4ec60be3a0754ba2bee20aef20f3aa3d5277071d"
