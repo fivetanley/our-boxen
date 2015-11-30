@@ -2,3 +2,7 @@ ruby::provider: chruby
 ruby::chruby::auto_switch: true
 
 ruby::rbenv::ensure: "absent"
+
+# App Store Credentials
+appstore::appleid: "dstanley.stuart@gmail.com"
+appstore::password: "nope this is not my password"

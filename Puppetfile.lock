@@ -103,6 +103,11 @@ GITHUBTARBALL
   specs:
     module_data (0.0.4)
 
+GITHUBTARBALL
+  remote: xdissent/puppet-appstore
+  specs:
+    puppet-appstore (0.0.7)
+
 DEPENDENCIES
   boxen (= 3.11.0)
   brewcask (= 0.0.6)
@@ -120,6 +125,7 @@ DEPENDENCIES
   openssl (= 1.0.0)
   phantomjs (= 3.0.0)
   pkgconfig (= 1.0.0)
+  puppet-appstore (= 0.0.7)
   repository (= 2.4.1)
   ruby (= 8.5.3)
   stdlib (= 4.7.0)

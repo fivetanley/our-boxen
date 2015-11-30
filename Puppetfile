@@ -65,3 +65,5 @@ github "xquartz",     "1.2.1"
 # github "postgresql",  "4.0.1"
 # github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
+
+github "puppet-appstore", "0.0.7", :repo => "xdissent/puppet-appstore"
