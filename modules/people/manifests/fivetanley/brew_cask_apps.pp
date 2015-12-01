@@ -20,5 +20,6 @@ class people::fivetanley::brew_cask_apps {
   }
   package { '1password': }
   package { 'dropbox': }
+  package { 'knock': }
 }
 
