@@ -30,4 +30,8 @@ class people::fivetanley::app_store_apps {
   ::appstore::app { 'The Unarchiver':
     source => 'the-unarchiver/id425424353'
   }
+
+  ::appstore::app { 'Annotate':
+    source => 'annotate-capture-screenshot/id918207447'
+  }
 }

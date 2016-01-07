@@ -4,7 +4,10 @@ class people::fivetanley::brew_cask_apps {
   Package {
     provider => brewcask,
     ensure   => installed,
-    require  => File[$boxen_bin_dir]
+    require  => [
+      File[$boxen_bin_dir],
+      ::Homebrew::Tap['caskroom/versions']
+    ]
   }
 
   # package { 'vagrant': }
@@ -21,5 +24,7 @@ class people::fivetanley::brew_cask_apps {
   package { '1password': }
   package { 'dropbox': }
   package { 'knock': }
+  package { 'visual-studio-code': }
+  package { 'firefoxdeveloperedition': }
 }
 
