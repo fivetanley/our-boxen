@@ -3,7 +3,10 @@ class people::fivetanley::node {
     version => '5.1.0'
   }
 
-  nodejs::version { '4.2.3':
+  Nodejs::Version {
     ensure => installed
   }
+
+  nodejs::version { '4.2.3': }
+  nodejs::version { '0.12.8': }
 }

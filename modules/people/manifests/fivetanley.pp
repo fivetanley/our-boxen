@@ -1,5 +1,4 @@
 class people::fivetanley {
-  include brewcask
   include ohmyzsh
   include people::fivetanley::git
   include people::fivetanley::brew
@@ -9,6 +8,7 @@ class people::fivetanley {
 
   ruby::version { '2.1.5': }
   ruby::version { '2.3.0': }
+  ruby::version { 'jruby-1.7.22': }
 
   $home = "/Users/${::boxen_user}"
   $home_files = 'puppet:///modules/people/fivetanley/home'

@@ -1,4 +1,5 @@
 class people::fivetanley::brew_cask_apps {
+  include brewcask
   $boxen_bin_dir = '/opt/boxen/bin'
 
   Package {
@@ -10,8 +11,9 @@ class people::fivetanley::brew_cask_apps {
     ]
   }
 
-  # package { 'vagrant': }
-  # package { 'vmware-fusion': }
+  package { 'vagrant': }
+  package { 'alfred': }
+  # package { 'vmware_fusion': }
   package { 'spotify': }
   package { 'iterm2': }
   package { 'google-chrome': }
@@ -26,5 +28,7 @@ class people::fivetanley::brew_cask_apps {
   package { 'knock': }
   package { 'visual-studio-code': }
   package { 'firefoxdeveloperedition': }
+  package { 'gas-mask': }
+  package { 'adium': }
 }
 

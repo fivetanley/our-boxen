@@ -83,8 +83,18 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /opt/boxen/env.sh
+# source /opt/boxen/chruby/share/chruby/chruby.sh
+source /opt/boxen/chruby/share/chruby/auto.sh
+
+# Add vagrant to the path
+export PATH=/opt/vagrant/bin:$PATH
+export PATH=/opt/homebrew-cask/Caskroom/virtualbox/5.0.12-104815/Applications/VirtualBox.app/Contents/MacOS/:$PATH
 
 # Alias neovim to vim
 alias vi=nvim
 alias vim=nvim
 export EDITOR=nvim
+
+# direnv - https://github.com/direnv/direnv
+# Automatically loads .envrc files when switching directories
+eval "$(direnv hook zsh)"

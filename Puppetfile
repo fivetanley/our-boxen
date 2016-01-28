@@ -68,3 +68,4 @@ github "xquartz",     "1.2.1"
 
 github "puppet-appstore", "0.0.7", :repo => "xdissent/puppet-appstore"
 github "puppet-ohmyzsh", "1.0.1", :repo => "fivetanley/puppet-ohmyzsh"
+github "java", "1.8.4"
