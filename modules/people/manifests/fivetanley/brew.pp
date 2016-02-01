@@ -13,6 +13,7 @@ class people::fivetanley::brew {
   package { 'elasticsearch17': }
   package { 'imagemagick': }
   package { 'direnv': }
+  package { 'heroku-toolbelt': }
 
   ::homebrew::tap { 'neovim/neovim': }
   ::homebrew::tap { 'caskroom/versions': }
