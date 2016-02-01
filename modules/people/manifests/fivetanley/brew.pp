@@ -14,6 +14,7 @@ class people::fivetanley::brew {
   package { 'imagemagick': }
   package { 'direnv': }
   package { 'heroku-toolbelt': }
+  package { 'terraform': }
 
   ::homebrew::tap { 'neovim/neovim': }
   ::homebrew::tap { 'caskroom/versions': }
