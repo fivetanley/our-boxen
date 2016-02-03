@@ -1,0 +1,16 @@
+" colorscheme desert256
+
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-fugitive'
+Plug 'editorconfig/editorconfig-vim'
+
+set wildignore+=**/node_modules     " ignores node_modules
+set wildignore+=**/bower_components " ignores bower_components
+set wildignore+=**/tmp              " ignores tmp
+set wildignore+=**/.vagrant         " ignores vagrant files
+
+call plug#end()
+
