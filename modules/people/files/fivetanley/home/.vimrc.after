@@ -6,6 +6,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'pangloss/vim-javascript'
 
 set wildignore+=**/node_modules     " ignores node_modules
 set wildignore+=**/bower_components " ignores bower_components
