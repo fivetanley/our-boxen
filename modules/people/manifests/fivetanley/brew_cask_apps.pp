@@ -7,7 +7,7 @@ class people::fivetanley::brew_cask_apps {
     ensure   => installed,
     require  => [
       File[$boxen_bin_dir],
-      ::Homebrew::Tap['caskroom/versions']
+      ::Homebrew::Tap['caskroom/homebrew-versions']
     ]
   }
 
@@ -30,5 +30,7 @@ class people::fivetanley::brew_cask_apps {
   package { 'firefoxdeveloperedition': }
   package { 'gas-mask': }
   package { 'adium': }
+  package { 'transmit': }
+  package { 'google-chrome-canary': }
 }
 

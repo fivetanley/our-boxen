@@ -5,10 +5,9 @@ class people::fivetanley {
   include people::fivetanley::app_store_apps
   include people::fivetanley::brew_cask_apps
   include people::fivetanley::janus
-
-  ruby::version { '2.1.5': }
-  ruby::version { '2.3.0': }
-  ruby::version { 'jruby-1.7.22': }
+  include people::fivetanley::ruby
+  include people::fivetanley::node
+  include people::fivetanley::go
 
   $home = "/Users/${::boxen_user}"
   $home_files = 'puppet:///modules/people/fivetanley/home'
@@ -17,6 +16,10 @@ class people::fivetanley {
     ensure  => file,
     source  => "${home_files}/.zshrc",
     require => Class['ohmyzsh']
+  }
+
+  file { "${home}/code":
+    ensure => directory
   }
 }
 

@@ -15,9 +15,12 @@ class people::fivetanley::brew {
   package { 'direnv': }
   package { 'heroku-toolbelt': }
   package { 'terraform': }
+  package { 'docker': }
+  package { 'docker-machine': }
+  package { 'docker-compose': }
 
   ::homebrew::tap { 'neovim/neovim': }
-  ::homebrew::tap { 'caskroom/versions': }
+  ::homebrew::tap { 'caskroom/homebrew-versions': }
   ::homebrew::tap { 'homebrew/services': }
 
   package { 'neovim':

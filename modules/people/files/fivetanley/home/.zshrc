@@ -83,7 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source /opt/boxen/env.sh
-# source /opt/boxen/chruby/share/chruby/chruby.sh
+source /opt/boxen/chruby/share/chruby/chruby.sh
 source /opt/boxen/chruby/share/chruby/auto.sh
 
 # Add vagrant to the path
@@ -98,3 +98,9 @@ export EDITOR=nvim
 # direnv - https://github.com/direnv/direnv
 # Automatically loads .envrc files when switching directories
 eval "$(direnv hook zsh)"
+
+# Set up GOPATH for Golang
+export GOPATH=~/code/go
+
+# Set up Docker Machine
+eval "$(docker-machine env fusion)"

@@ -9,6 +9,6 @@ appstore::appleid: "dstanley.stuart@gmail.com"
 appstore::password: "nope this is not my password"
 
 ### Node.js Settings
-nodejs::build::ensure: "4ec60be3a0754ba2bee20aef20f3aa3d5277071d"
+nodejs::build::ensure: "v2.1.4"
 
 
